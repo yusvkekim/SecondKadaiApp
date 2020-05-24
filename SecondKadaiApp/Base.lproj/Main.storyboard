@@ -21,8 +21,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rdf-Dx-Moh">
-                                <rect key="frame" x="115" y="265" width="185" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rdf-Dx-Moh">
+                                <rect key="frame" x="191" y="265" width="32" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -36,12 +36,21 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Rdf-Dx-Moh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Uo-ON-zVy"/>
                             <constraint firstItem="ewe-XO-4Ni" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="8yA-FV-6r6"/>
+                            <constraint firstItem="ewe-XO-4Ni" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HCA-0P-U88"/>
                             <constraint firstItem="Rdf-Dx-Moh" firstAttribute="top" secondItem="ewe-XO-4Ni" secondAttribute="bottom" constant="100" id="JPz-lj-tqa"/>
+                            <constraint firstItem="Rdf-Dx-Moh" firstAttribute="top" secondItem="ewe-XO-4Ni" secondAttribute="bottom" constant="100" id="Pv0-LV-5Lf"/>
+                            <constraint firstItem="Rdf-Dx-Moh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RrZ-fm-m53"/>
                             <constraint firstItem="mv5-6t-d9T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SHK-bM-xeO"/>
+                            <constraint firstItem="ewe-XO-4Ni" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SeX-jD-dhB"/>
+                            <constraint firstItem="mv5-6t-d9T" firstAttribute="top" secondItem="Rdf-Dx-Moh" secondAttribute="bottom" constant="100" id="VKy-jg-N8L"/>
                             <constraint firstItem="ewe-XO-4Ni" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WKg-V4-z6g"/>
                             <constraint firstItem="mv5-6t-d9T" firstAttribute="top" secondItem="Rdf-Dx-Moh" secondAttribute="bottom" constant="100" id="XwB-Gf-4bb"/>
                             <constraint firstItem="Rdf-Dx-Moh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZaL-74-jua"/>
+                            <constraint firstItem="ewe-XO-4Ni" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="g1U-Ei-kX7"/>
+                            <constraint firstItem="mv5-6t-d9T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r62-sY-HsE"/>
+                            <constraint firstItem="mv5-6t-d9T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zgT-QU-mRy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -61,23 +70,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJt-wr-OEF">
-                                <rect key="frame" x="184" y="267" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJt-wr-OEF">
+                                <rect key="frame" x="184" y="221" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="kff-wc-LCH" kind="unwind" unwindAction="unwind:" id="yt7-nG-onH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="こんにちは \(result) さん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fq-z0-D3s">
-                                <rect key="frame" x="112" y="133" width="191" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちは \(result) さん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fq-z0-D3s">
+                                <rect key="frame" x="111.5" y="100" width="191" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7fq-z0-D3s" firstAttribute="centerX" secondItem="Cgz-lf-RWo" secondAttribute="centerX" id="9xI-Jt-B1N"/>
+                            <constraint firstItem="cJt-wr-OEF" firstAttribute="top" secondItem="7fq-z0-D3s" secondAttribute="bottom" constant="100" id="ILj-NX-0gH"/>
+                            <constraint firstItem="cJt-wr-OEF" firstAttribute="centerX" secondItem="Cgz-lf-RWo" secondAttribute="centerX" id="R4O-yL-fiA"/>
+                            <constraint firstItem="7fq-z0-D3s" firstAttribute="top" secondItem="2NB-sW-xuT" secondAttribute="top" constant="100" id="VwP-jR-Au9"/>
+                            <constraint firstItem="7fq-z0-D3s" firstAttribute="centerX" secondItem="Cgz-lf-RWo" secondAttribute="centerX" id="kdV-I0-Szq"/>
+                            <constraint firstItem="cJt-wr-OEF" firstAttribute="centerX" secondItem="Cgz-lf-RWo" secondAttribute="centerX" id="lR0-rB-jc1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2NB-sW-xuT"/>
                     </view>
                     <navigationItem key="navigationItem" id="ojV-dy-D4g"/>
